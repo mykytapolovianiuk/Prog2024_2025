@@ -1,7 +1,15 @@
+def calculate(x, y):
+    try:
+        first = (x ** 2 - 2 * x * y + 4 * y ** 2) / (x + 5)
+        last = (3 * x ** 2 - y ** 2) / (y - 7)
+        finalResult = first + last
+
+        return print(f"{finalResult:.3f}")
+
+    except ZeroDivisionError:
+        return "Ділення на нуль!"
+
 x, y = [float(a) for a in input().split()]
 
-squaredX = x * x
-squaredY = y * y
-
-print(float((squaredX - 2  * x * y + squaredY / x + 5) + 3 * squaredX - squaredY / y - 7))
+finalResult = calculate(x, y)
 
