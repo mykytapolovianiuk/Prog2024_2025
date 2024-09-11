@@ -1,4 +1,3 @@
-
 def calculate(x, y):
     try:
         first = (2 * x * y) / ((x**2 + y**2)**0.5)
