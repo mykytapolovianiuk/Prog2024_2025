@@ -1,5 +1,4 @@
-s = 50.2655
-r = 5
+s, r = [float(x) for x in input().split()]
 pi = 3.14
 
 outRSquared = r * r
